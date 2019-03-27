@@ -19,7 +19,10 @@ import com.mashape.unirest.http.exceptions.UnirestException;
 
 public class SlackService {
 	
-	static final String SLACK_TOKEN = "";
+	// static final String SLACK_TOKEN = ""; 
+	// - use it only for debugging - the slack token can't be uploaded to the repo att all - thats automatically lead to token expiration.
+	// so make sure you pass the token as param on jenkins build.
+	
 	public void send_message(String content) throws UnirestException {
 
 		try {
